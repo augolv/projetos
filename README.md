@@ -1,4 +1,4 @@
-# projetos
+# Projetos
  
 Olá, sou o Augusto e estou aprendendo Front-end. Aqui estão meus projetos:
 
