@@ -63,6 +63,11 @@ main{
     position: absolute;
     bottom: -50px;
     right: -100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.botao:hover{
+    background-color: hsl(259, 54%, 37%);
 }
 
 input{
