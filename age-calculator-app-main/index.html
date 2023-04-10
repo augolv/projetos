@@ -5,33 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | Age calculator app</title>
+  <title>Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <main>
+    <div class="container-formulario">
+      <ul class="container-formulario-lista">
+        <li class="container-formulario-lista-item">
+          <label>Day</label>
+          <input type="text" id="dia" name="dia" placeholder="DD" required></input>
+        </li>
+        <li class="container-formulario-lista-item">
+          <label>Month</label>
+          <input type="text" id="mes" name="mes" placeholder="MM" required></input>
+        </li>
+        <li class="container-formulario-lista-item">
+          <label>Year</label>
+          <input type="text" id="ano" name="ano" placeholder="YYYY" required></input>
+        </li>
+      </ul>
+      <button class="botao"></button>
+    </div>
+    <div class="container-resultado">
+      <p class="container-resultado-para"><strong>--</strong> years</p>
+      <p class="container-resultado-para"><strong>--</strong> months</p>
+      <p class="container-resultado-para"><strong>--</strong> days</p>
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

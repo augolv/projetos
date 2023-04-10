@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+:root{
+    --roxo: hsl(259, 100%, 65%);
+    --verm-claro: hsl(0, 100%, 67%);
+    --branco: #fff;
+    --cinza-claro: hsl(0, 0%, 86%);
+    --cinza: hsl(0, 1%, 44%);
+    --black: hsl(0, 0%, 8%);
+    --poppins: 'Poppins';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--cinza-claro);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 840px;
+    align-content: center;
+    justify-content: center;
+}
+
+main{
+    background-color: #fff;
+    font-family: var(--poppins);
+    max-width: 850px;
+    padding: 4rem 10rem 4rem 4rem;
+    border-radius: 15px 15px 25% 15px;
+}
+
+.container-formulario{
+    border-bottom: 1px solid var(--cinza-claro);
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+.container-formulario-lista{
+    color: var(--cinza);
+    text-transform: uppercase;
+    display: flex;
+    gap: 2rem;
+}
+
+.container-formulario-lista-item{
+    display: grid;
+    gap: 0.5rem;
+}
+
+.botao{
+    background-image: url(assets/images/icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--roxo);
+    border: none;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
+}
+
+input{
+    font-weight: 700;
+    font-size: 2rem;
+    max-width: 7rem;
+    border-radius: 5px;
+    border: 1px solid var(--cinza-claro);
+    padding: 1rem;
+}
+
+.container-resultado{
+    color: var(--black);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 6.5rem;
+    line-height: 7rem;
+    padding-top: 3.5rem;
+}
+.container-resultado-para strong{
+    color: var(--roxo);
+}
