@@ -21,3 +21,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.lojas-conteudo h3{
+    grid-column: 1/-1;
+}
