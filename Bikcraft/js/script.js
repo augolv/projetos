@@ -32,8 +32,11 @@ function ativarPergunta(event){
     const pergunta= event.currentTarget;
     const controls= pergunta.getAttribute('aria-controls')
     const resposta= document.getElementById(controls);
+    
     resposta.classList.toggle('ativa')
-    console.log(resposta);
+    const ativa= resposta.classList.contains('ativa');
+    pergunta.setAttribute('aria-expanded', ativa)
+    console.log(ativa);
 }
 
 function eventosPerguntas(pergunta){
