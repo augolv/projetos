@@ -15,14 +15,17 @@
   margin: 0 auto;
 }
 
+.parceiros img {
+  margin: auto;
+}
+
 .parceiros li {
   display: flex;
   padding: 32px;
-  border-left: 2px solid var(--cor-2);
 }
 
-.parceiros img {
-  margin: auto;
+.parceiros li {
+  border-left: 2px solid var(--cor-2);
 }
 
 .parceiros li:first-child,
@@ -47,7 +50,8 @@
   .parceiros li:nth-child(n + 3) {
     border-top: 2px solid var(--cor-2);
   }
-  .parceiros li:nth-child(odd) {
+  .parceiros li:nth-child(3),
+  .parceiros li:nth-child(7) {
     border-left: none;
   }
 }

@@ -18,6 +18,8 @@
 .seguro-conteudo {
   padding-top: 180px;
   padding-bottom: 180px;
+  background: url("../../img/dec/bottom-right.svg") no-repeat bottom 180px right
+    20px;
 }
 
 .seguro h2 {
@@ -28,7 +30,7 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .seguro-bg {
     box-shadow: inset 0 -60px var(--cor-12);
   }
@@ -39,5 +41,6 @@
     grid-row: 1;
     padding-top: 40px;
     padding-bottom: 0px;
+    background: none;
   }
 }
