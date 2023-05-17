@@ -1,6 +1,6 @@
 .introducao-bg {
   background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
-    bottom 40px left 20px;
+    bottom 160px left 20px;
   box-shadow: inset 0 -120px var(--cor-0);
 }
 
@@ -10,14 +10,16 @@
   gap: 0px 40px;
 }
 
-.introducao img {
-  height: 100%;
-  object-fit: cover;
-}
-
 .introducao-conteudo {
   align-self: end;
   padding-bottom: 200px;
+}
+
+.introducao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .introducao h1 {
@@ -29,10 +31,14 @@
 }
 
 @media (max-width: 800px) {
-  .introducao {
-    padding-top: 40px;
+  .introducao-bg {
     background: var(--cor-11);
-    box-shadow: inset 0 -60px var(--cor-0);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
   .introducao-conteudo {
     padding-bottom: 0px;
@@ -40,11 +46,8 @@
   .introducao h1 {
     margin-bottom: 16px;
   }
-  .introducao {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
   .introducao img {
+    height: 300px;
     width: 100%;
   }
 }

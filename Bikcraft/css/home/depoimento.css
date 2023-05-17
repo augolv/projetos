@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--cor-p1);
+  overflow: hidden;
 }
 
 .depoimento img {
@@ -13,35 +14,25 @@
 
 .depoimento-conteudo {
   padding: 40px 40px 80px 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  overflow: hidden;
-  background: url("../../img/dec/top-left-p.svg") no-repeat top 40px left 40px,
-    url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px right 40px;
-}
-
-.depoimento-conteudo blockquote {
-  margin-top: auto;
+  align-self: end;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
 }
 
 .depoimento-conteudo p {
   max-width: 32ch;
-  font-family: Merriweather;
+  font-family: "Merriweather", serif;
   font-style: italic;
   font-weight: 900;
-  margin-bottom: 1em;
+  margin-bottom: 32px;
   position: relative;
-  z-index: 0;
-  display: block;
 }
 
 .depoimento p::before,
 .depoimento p::after {
-  color: var(--cor-p2);
   font-size: 5rem;
+  color: var(--cor-p2);
   position: absolute;
-  z-index: -1;
 }
 
 .depoimento p::before {
@@ -52,7 +43,6 @@
 
 .depoimento p::after {
   content: "”";
-  bottom: -60px;
 }
 
 @media (min-width: 1200px) {
@@ -71,10 +61,6 @@
   }
   .depoimento-conteudo {
     padding: 40px 20px;
-    align-items: center;
-    background: none;
-  }
-  .depoimento p::before {
-    left: 0px;
+    margin: auto;
   }
 }

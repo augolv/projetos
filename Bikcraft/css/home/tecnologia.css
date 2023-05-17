@@ -1,11 +1,6 @@
 .tecnologia-bg {
   background-color: var(--cor-11);
-  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-0);
-  /* possível solução */
-  /* background: url("../../img/dec/bottom-left.svg") no-repeat bottom 160px left
-      20px,
-    linear-gradient(#fff var(--offset), rgba(255, 255, 255, 0) 0px),
-    linear-gradient(to top, #fff var(--offset), #111 0px); */
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
 }
 
 .tecnologia {
@@ -22,12 +17,11 @@
 }
 
 .tecnologia-conteudo {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .tecnologia-conteudo > span {
-  text-transform: uppercase;
   display: block;
   margin-bottom: 20px;
 }
@@ -40,7 +34,7 @@
   margin-bottom: 20px;
 }
 
-.tecnologia-conteudo a {
+.tecnologia a {
   margin-bottom: 80px;
 }
 
@@ -73,7 +67,7 @@
   .tecnologia-imagem {
     display: none;
   }
-  .tecnologia-conteudo a {
+  .tecnologia a {
     margin-bottom: 60px;
   }
 }
