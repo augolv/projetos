@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+:root{
+    --cor-p: rgba(142, 36, 36, 1);
+}
+
 ul, a{
     list-style: none;
     text-decoration: none;
@@ -26,6 +30,7 @@ body{
     grid-template-columns: 150px 1fr 1fr;
     gap: 80px;
     padding: 26px 112px;
+    margin-bottom: 100px;
 }
 
 .header-menu,
@@ -54,7 +59,7 @@ body{
 }
 
 .cadastrar{
-    background-color: rgba(142, 36, 36, 1);
+    background-color: var(--cor-p);
     border-radius: 8px;
     color: white;
 }
@@ -63,4 +68,22 @@ body{
 .sobrenos{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+
+.sobrenos-introducao{
+    text-align: center;
+}
+
+.sobrenos-introducao h1{
+    font-size: 1rem;
+    color: var(--cor-p);
+    margin-bottom: 24px;
+}
+
+.sobrenos-introducao h2{
+    font-size: 3rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 24px;
 }
