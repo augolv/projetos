@@ -127,3 +127,24 @@ body{
 }
 
 /* Vagas */
+.vagas-introducao{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.vagas .titulo{
+    background-color: rgba(142, 36, 36, 0.05);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+}
+
+.vagas .subtitulo{
+    font-size: 36px;
+}
+
+.vagas .paragrafo{
+    margin-bottom: 64px;
+}
+
