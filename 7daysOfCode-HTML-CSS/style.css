@@ -1,32 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-:root{
+:root {
     --cor-p1: rgba(142, 36, 36, 1);
-    --cor-p2:#101828;
+    --cor-p2: #101828;
 }
 
-ul, a{
+ul,
+a {
     list-style: none;
     text-decoration: none;
     color: inherit;
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     color: rgba(102, 112, 133, 1);
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 /* Header */
-.header{
+.header {
     display: grid;
     grid-template-columns: 150px 1fr 1fr;
     gap: 80px;
@@ -35,80 +36,80 @@ body{
 }
 
 .header-menu,
-.header-login{
+.header-login {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-.header-menu{
+.header-menu {
     gap: 16px;
 }
 
-.header-menu a{
+.header-menu a {
     display: inline-block;
     padding: 8px 16px;
 }
 
-.header-login{
+.header-login {
     gap: 12px;
 }
 
-.header-login a{
-    padding: 10px 18px;
+.header-login a {
+    padding: 12px 20px;
     display: inline-block;
 }
 
-.cadastrar{
+.cadastrar {
     background-color: var(--cor-p1);
     border-radius: 8px;
     color: white;
 }
 
 /* Sobre nós */
-.sobrenos{
+.sobrenos {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 192px;
 }
 
-.sobrenos-introducao{
+.sobrenos-introducao {
     display: grid;
     justify-content: center;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.titulo{
+.titulo {
     font-size: 1rem;
     color: var(--cor-p1);
     margin-bottom: 24px;
 }
 
-.subtitulo{
+.subtitulo {
     font-size: 3rem;
     color: var(--cor-p2);
     font-weight: 600;
     margin-bottom: 24px;
 }
 
-.paragrafo{
+.paragrafo {
     font-size: 1.25rem;
     max-width: 70ch;
 }
 
-.sobrenos-dados{
+.sobrenos-dados {
     display: flex;
     justify-content: space-between;
     padding: 0 80px;
     gap: 32px;
 }
 
-.sobrenos-dados div{
+.sobrenos-dados div {
     width: 280px;
 }
 
-.sobrenos-dados span{
+.sobrenos-dados span {
     display: block;
     font-size: 5rem;
     font-weight: 600;
@@ -116,73 +117,153 @@ body{
     margin-bottom: 16px;
 }
 
-.sobrenos-dados h2{
+.sobrenos-dados h2 {
     font-size: 1rem;
     color: var(--cor-p2);
     margin-bottom: 10px;
 }
 
-.sobrenos-dados p{
+.sobrenos-dados p {
     max-width: 29ch;
 }
 
 /* Vagas */
-.vagas-introducao{
+.vagas-introducao {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
 }
 
-.vagas .titulo{
+.vagas .titulo {
     background-color: rgba(142, 36, 36, 0.05);
     padding: 4px 12px;
     border-radius: 16px;
     font-size: 14px;
 }
 
-.vagas .subtitulo{
+.vagas .subtitulo {
     font-size: 36px;
 }
 
-.vagas .paragrafo{
+.vagas .paragrafo {
     margin-bottom: 64px;
 }
 
-.vagas picture{
+.vagas picture {
     margin-bottom: 64px;
 }
 
-.vagas-abertas{
+.vagas-abertas {
     display: grid;
     grid-template-columns: 770px;
     justify-content: center;
     margin-bottom: 32px;
 }
 
-.vagas-abertas h3{
+.vagas-abertas h3 {
     color: var(--cor-p2);
     margin-bottom: 32px;
 }
 
-.vagas-abertas > h3{
+.vagas-abertas>h3 {
     font-size: 20px;
 }
 
-.vagas-abertas .lista-item{
+.vagas-abertas .lista-item {
     padding: 24px;
     border: 1px solid #EAECF0;
     border-radius: 16px;
     margin-bottom: 24px;
 }
 
-.vagas-abertas .lista-item h3{
+.vagas-abertas .lista-item h3 {
     font-size: 18px;
 }
 
-.vagas-abertas .lista-item span{
+.vagas-abertas .lista-item span {
     margin-right: 24px;
 }
 
-.vagas-lista{
+.vagas-lista {
     margin-bottom: 64px;
+}
+
+/* Depçoimentos */
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(195, 25, 25, 0.03);
+    border-radius: 16px;
+    padding: 64px;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.depoimento h1 {
+    font-size: 14px;
+    color: var(--cor-p1);
+    margin-bottom: 16px;
+}
+
+.depoimento q {
+    font-size: 36px;
+    color: var(--cor-p2);
+    max-width: 55ch;
+    margin-bottom: 32px;
+}
+
+.depoimento figure {
+    margin-bottom: 16px;
+}
+
+.depoimento p {
+    color: var(--cor-p2);
+}
+
+.depoimento span {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: rgba(102, 112, 133, 1);
+}
+
+/* Formulário */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: #F9FAFB;
+}
+
+.footer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 40px;
+}
+
+.formulario{
+    margin-bottom: 32px;
+}
+
+.formulario input {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    margin-right: 14px;
+    width: 240px;
+}
+
+.formulario a {
+    display: inline-block;
+    padding: 12px 20px;
 }
