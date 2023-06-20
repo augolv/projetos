@@ -8,4 +8,6 @@ Olá, sou o Augusto e estou aprendendo Front-end. Aqui estão meus projetos:
     <li><a target="_blank" href="https://augustooliveira0.github.io/projetos/projeto-cordel/index.html">Projeto Cordel</a></li>
     <li><a href="https://augustooliveira0.github.io/projetos/portfolio-ficticio\index.html">Portifólio Fictício</a></li>
     <li><a href="https://augustooliveira0.github.io/projetos/Bikcraft\index.html">Bikcraft</a></li>
+    <li><a href="https://tiktok---jornada-1b273.web.app/">Clone do TikTok</a></li>
+    <li><a href="https://augustooliveira0.github.io/projetos/7daysOfCode-HTML-CSS\index.html">Desafio HTML e CSS da Alura</a></li>
 </ul>
