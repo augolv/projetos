@@ -149,7 +149,7 @@ body {
     margin-bottom: 64px;
 }
 
-.vagas picture {
+.vagas figure {
     margin-bottom: 64px;
 }
 
@@ -188,7 +188,7 @@ body {
     margin-bottom: 64px;
 }
 
-/* Depçoimentos */
+/* Depoimentos */
 .depoimento {
     display: flex;
     flex-direction: column;
