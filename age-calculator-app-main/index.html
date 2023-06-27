@@ -17,20 +17,20 @@
 
   <main>
     <div class="container-formulario">
-      <ul class="container-formulario-lista">
-        <li class="container-formulario-lista-item">
-          <label>Day</label>
-          <input type="number" id="dia" name="dia" placeholder="DD" maxlength="2"></input>
-        </li>
-        <li class="container-formulario-lista-item">
-          <label>Month</label>
-          <input type="number" id="mes" name="mes" placeholder="MM" maxlength="2"></input>
-        </li>
-        <li class="container-formulario-lista-item">
-          <label>Year</label>
-          <input type="number" id="ano" name="ano" placeholder="YYYY" maxlength="4"></input>
-        </li>
-      </ul>
+      <form action="" class="form-lista form-js">
+        <div class="form-item">
+          <label for="">Day</label>
+          <input type="number" id="dia" name="dia" placeholder="DD" maxlength="2" max="31" min="1" required>
+        </div>
+        <div class="form-item">
+          <label for="">Month</label>
+          <input type="number" id="mes" name="mes" placeholder="MM" maxlength="2" max="12" min="1" required>
+        </div>
+        <div class="form-item">
+          <label for="">Year</label>
+          <input type="number" id="ano" name="ano" placeholder="YYYY" maxlength="4" min="1970">
+        </div>
+      </form>
       <button class="botao"></button>
     </div>
     <div class="container-resultado">
@@ -41,7 +41,6 @@
   </main>
 
   <script src="script.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>

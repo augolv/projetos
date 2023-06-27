@@ -39,14 +39,14 @@ main{
     padding-bottom: 2.5rem;
 }
 
-.container-formulario-lista{
+.form-lista{
     color: var(--cinza);
     text-transform: uppercase;
     display: flex;
     gap: 2rem;
 }
 
-.container-formulario-lista-item{
+.form-item{
     display: grid;
     gap: 0.5rem;
 }

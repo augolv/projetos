@@ -1,30 +1,18 @@
-let inputDia= document.querySelector('#dia');
-let inputMes= document.querySelector('#mes');
-let inputAno= document.querySelector('#ano');
+const diaNascimento = document.querySelector('#dia');
+const mesNascimento = document.querySelector('#mes');
+const anoNascimento = document.querySelector('#ano');
+const botao = document.querySelector('.botao')
 
-document.addEventListener('input', (event) => {
-    console.log(event.target.valueAsNumber);
-    inputDia= event.target.valueAsNumber;
-})
+function handlleClick() {
+    if (diaNascimento && mesNascimento && anoNascimento) {
 
-const resultadoDia= document.querySelector('#resultado-dias');
-const resultadoMes= document.querySelector('#resultado-meses');
-const resultadoAno= document.querySelector('#resultado-anos');
-const diaAtual= new Date().getDate();
-const mesAtual= new Date().getMonth() + 1;
-const anoAtual= new Date().getFullYear();
-const botao= document.querySelector('.botao');
-const dataNascimento= new Date(`${Number(inputAno.value)}-${Number(inputMes.value)}-${Number(inputDia.value)} `);
-
-function calcularIdade(){
-    
-    let idade = anoAtual - Number(inputAno.value);
-
-    if(mesAtual < Number(inputMes.value) || mesAtual === Number(inputMes.value) && diaAtual < Number(inputDia.value)){
-        resultadoAno.textContent= `${idade - 1}`
-        resultadoMes.textContent=   12
-        resultadoDia.textContent= diaAtual
+        const nascimento = new Date(anoNascimento.value, mesNascimento.value - 1, diaNascimento.value)
+        const agora = new Date();
+        
+        console.log(agora, nascimento);
+    } else {
+        throw 'Dados Inválidos'
     }
 }
 
-botao.addEventListener("click", calcularIdade);
+botao.addEventListener('click', handlleClick);
